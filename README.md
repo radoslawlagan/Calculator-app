@@ -2,7 +2,7 @@
 
 This is a Calculator App that I've coded in Vanilla JavaScript.
 
-It has basic calculator functionalities like: addition, substraction, multiplication, division and percentage calculation. It also stores a history of results that You can later click on to use them in next operations.
+It has basic calculator functionalities like: addition, substraction, multiplication, division and percentage calculation. It also stores a history of results that You can click on to use them in next operations. You can also clear the history with a button.
 
 Calculator is my only project that is not made with Mobile First and RWD approach. Maybe I will update it one day. :)
 
