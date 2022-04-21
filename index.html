@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Calculator App</h1>
+    </header>
+
+    <main>
+        <div class="calculator">
+            <div class="display">
+                <div class="top">
+                    <p class="previous-number"></p>
+                </div>
+                <div class="middle">
+                    <p class="operator-sign"></p>
+                </div>
+                <div class="bottom">
+                    <p class="current-number"></p>
+                </div>
+            </div>
+            <div class="keyboard">
+                <button class="clear">C</button>
+                <button class="backspace">←</button>
+                <button class="operator">%</button>
+                <button class="operator">/</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="operator">*</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">+</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator">-</button>
+                <button class="number">.</button>
+                <button class="number">0</button>
+                <button class="switch">+/-</button>
+                <button class="equals">=</button>
+            </div>
+        </div>
+        <div class="history">
+            <p>History</p>
+            <button class="history-btn">Clear</button>
+            <ul class="history-list">
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>Calculator App by Radosław Łagan</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

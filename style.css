@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary: #fcfcfc;
+}
+
+html {
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 62.5%;
+	color: var(--primary);
+}
+
+body {
+	height: 100vh;
+	background-image: linear-gradient(
+		to right bottom,
+		#f69ed0,
+		#e8a1dd,
+		#d7a5e8,
+		#c3aaf0,
+		#adaef5,
+		#8bb6ff,
+		#5fbeff,
+		#00c5ff,
+		#00d0f2,
+		#00d8d4,
+		#00dca7,
+		#5edc74
+	);
+}
+
+header {
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header h1 {
+	font-size: 3.6rem;
+}
+
+main {
+	height: 75vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculator {
+	display: flex;
+	flex-direction: column;
+}
+
+.display {
+	height: 125px;
+	width: 400px;
+	padding: 1em;
+	margin-bottom: 0.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 5px;
+	font-size: 2rem;
+	text-align: right;
+	background-color: rgba(0, 0, 0, 0.75);
+	word-break: break-all;
+	overflow-y: auto;
+}
+
+.keyboard {
+	height: 350px;
+	display: grid;
+	grid-gap: 0.5em;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+}
+
+button {
+	padding: 1em;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 1.8rem;
+	color: var(--primary);
+	background-color: rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.history {
+	height: 485px;
+	padding: 2em 4em;
+	margin-left: 5em;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.75);
+	overflow-y: auto;
+}
+
+.history p {
+	font-size: 2.2rem;
+	text-align: center;
+}
+
+.history-btn {
+	display: block;
+	padding: 0.6em 1.8em;
+	margin: 1em auto 1.5em;
+	font-size: 1.4rem;
+	border: 1px solid var(--primary);
+	background-color: transparent;
+	text-align: center;
+}
+
+.history-list {
+	font-size: 1.6rem;
+}
+
+li {
+	margin: 0.6em 0;
+	cursor: pointer;
+}
+
+footer {
+	padding: 2em;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
